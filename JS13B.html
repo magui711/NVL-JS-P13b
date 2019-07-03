@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Palíndromos</title>
+</head>
+<body>
+<script type="text/javascript">
+	function esPalindromo (palabra){
+		a= palabra.length;
+		if (a == 0){
+			return false;
+		}
+	for (i=0; i<a; i++) {
+		 if (palabra[i] == palabra[a-1-i]){
+		 	return true;
+		 }
+		}
+		{
+		return false; 
+	}
+	}
+
+document.write (esPalindromo("hola"));
+
+document.write(esPalindromo("somos"));
+
+	
+
+</script>
+
+</body>
+</html>
